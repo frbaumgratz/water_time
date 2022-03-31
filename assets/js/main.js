@@ -126,9 +126,12 @@ const bg_overlay = document.getElementById("bg_overlay");
 const drink_container = document.getElementById("drink-water_container");
 
 init_btn.addEventListener("click", function () {
-  msg_container.classList.add("none");
-  bg_overlay.classList.add("opacity");
-  drink_container.classList.add("zindex");
+  msg_container.classList.add("fade-out");
+  setTimeout(function () {
+    msg_container.classList.add("none");
+    bg_overlay.classList.add("opacity40");
+    drink_container.classList.add("zindex", "opacity100", "swing-in-top-fwd");
+  }, 500);
 });
 
 // Randomly Select the Quote
