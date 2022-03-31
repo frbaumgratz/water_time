@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="descrição vai aqui" />
+    <meta name="keywords" content="palavras-chave vão aqui - around 8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Drink Water</title>
+
+    <link rel="shortcut icon" type="image/ico" href="assets/imgs/water.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- LANDING PAGE - bg + frase + btn -->
+      <div class="bg_overlay" id="bg_overlay">
+        <div class="daily_msg_container" id="daily_msg_container">
+          <p class="daily_msg" id="daily_msg">
+            “As 3 coisas mais importantes da sua vida: 1ª O dia que você nasce.
+            2ª O dia que você decide o que vai fazer com a sua vida. 3ª A pessoa
+            que você escolhe pra te acompanhar nessa jornada.”
+          </p>
+          <p class="quote">Joel Jota</p>
+          <button class="initialize_btn" id="initialize_btn">Click Me</button>
+        </div>
+      </div>
+      <!-- FIM DA LANDING PAGE -->
+
+      <!-- MAIN-PAGE - Drink Water -->
+      <div class="drink-water_container" id="drink-water_container">
+        <h1>Drink Water</h1>
+        <h3>Meta: 2 Litros</h3>
+
+        <div class="cup">
+          <div class="remained" id="remained">
+            <small class="falta" id="falta">Ainda falta</small>
+            <small class="so_mais" id="so_mais">Só mais</small>
+            <span id="liters"></span>
+          </div>
+          <div class="percentage" id="percentage"></div>
+        </div>
+
+        <p class="text">Quantos copos você já bebeu hoje?</p>
+
+        <div class="cups">
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+          <div class="cup cup-small">250ml</div>
+        </div>
+      </div>
+      <!-- FIM DA MAIN-PAGE -->
+      <audio id="powerup" src="/assets/audios/powerup.wav"></audio>
+      <audio id="warning" src="/assets/audios/warning.wav"></audio>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
